@@ -18,7 +18,7 @@ function createWindow(){
     win = new browserWindow({ width: 1600, height: 900, icon: __dirname + '/icon.ico' });
 
     //     // Load the index.html file
-    win.loadURL(url.format({ pathname: 'aurelia-app/dist/index.html', protocol: 'file', slashes: false }));
+    win.loadURL(url.format({ pathname: 'application/dist/index.html', protocol: 'file', slashes: false }));
 
     // open dev tools
     win.webContents.openDevTools();

@@ -1,0 +1,17 @@
+<template>
+  <div class="parent">
+      <div class="bs-component">
+          <div class="jumbotron">
+            <h1>The parent page</h1>
+            <p>The textbox below is bound to an observable which is passed to the child page (below)</p>
+              <div class="form-group">
+                  <label class="col-form-label" for="inputDefault">Default input</label>
+                  <input type="text" class="form-control" placeholder="Default input" id="inputDefault" value.bind="myString">
+                </div>
+          </div>
+      </div>    
+  </div>
+
+  <require from="../child-page/child"></require>
+  <child inputtext.bind="myString"></child>
+</template>

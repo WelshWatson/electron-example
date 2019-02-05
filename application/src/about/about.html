@@ -1,0 +1,18 @@
+<template>
+  <div class="row">
+    <div class="col-12">
+      <div class="bs-component">
+        <div class="jumbotron">
+          <h1 class="display-3">${aboutvalue}</h1>
+          <p class="lead">This is now the about page:</p>
+          <hr class="my-4">
+          <p>The button below publishes a new message to the 'new-message' event aggregator, click it to see the text in the home page change!</p>
+          <p class="lead">
+            <button class="btn btn-primary btn-lg" href="#" role="button" click.trigger="changeText()">THE ABOUT PAGE!!!!!</button>
+          </p>
+        </div>
+        <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+      </div>
+    </div>
+  </div>
+</template>
